@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MFO - Minha Fase de Obra</title>
+    <link rel="shortcut icon" href="img/casa1.png" sizes="20x20">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nameHeader">
+            <h1>Minha Fase de Obra</h1>
+        </div>
+        <div class="content-body">
+           <div class="cont-form">
+                <label for="valorInput">Digite sua parcela de <strong>FINANCIAMENTO:</strong></label>
+                <input type="number" id="valorInput">
+                
+                <label for="percentualInput">Digite o percentual da <strong>FASE DE OBRA</strong> (%):</label>
+                <input type="number" id="percentualInput">
+                
+                <button onclick="calcularPercentual()">Calcular</button>
+                
+                <p id="resultadoPercentual">O valor da sua parcela deve girar em torno de: <strong>
+                    <span id="valorResultado">R$</span></strong> </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
